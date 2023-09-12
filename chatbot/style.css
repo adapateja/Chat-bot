@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+body{
+    background-color: rgb(170, 65, 250);
+}
+h1{
+    margin-left: 640px;
+    margin-top: 50px;
+    color: #fff;
+    padding: 10px 10px;
+    background-color: rgb(234, 63, 63);
+    box-shadow: 5px 5px 15px 0px black;
+    max-width: max-content;
+    font-family:Arial, Helvetica, sans-serif
+}
+.container{
+    width: 80%;
+    height: 420px;
+    max-width: 350px;
+    background:white;
+    margin:50px auto;
+    box-shadow: 0px 0px 15px 0px black;
+}
+.chat-header{
+    height: 70px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: rgb(234, 63, 63);
+    color: white ;
+    font-size: 1.5rem;
+}
+.chat-header.logo{
+    height: 35px;
+    width: 35px;
+    box-shadow: 0px 0px 10px 10px black;
+}
+.chat-header img{
+    height: 100%;
+    width: 100%;
+    margin-left: -30px;
+    margin-bottom: -8px;
+}
+.chat-header .title{
+    padding-left: 10px;
+}
+.chat-body{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    align-items: flex-end;
+    overflow-y: auto;
+}
+.chat-input{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+#input-sec{
+    flex: 9;
+}
+.send{
+    flex: 1;
+    padding-left: 60px;
+}
+.send:hover{
+    cursor: pointer;
+}
+#txtinput{
+    line-height: 20px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    caret-color: black;
+    font-size: 1rem;
+    width: 100%;
+}
+.chatbot-message,
+.user-message {
+  padding: 8px;
+  background: #ccc;
+  margin: 5px;
+  width: max-content;
+  border-radius: 10px 3px 10px 10px;
+}
+.chatbot-message {
+  background: rgb(234, 63, 63);
+  color: white;
+  align-self: flex-start;
+  border-radius: 10px 10px 10px 3px;
+}
+#logo-icon{
+    width: 60px;
+    height: 70px;
+}
+
+#send-icon{
+    width: 35px;
+}
+#copy{
+    margin-top: 50px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    filter: drop-shadow(15px 15px 15px black);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:black;
+}
+@media only screen and (max-width: 768px) {
+    h1{
+        margin: auto;
+        width: auto;
+    }
+    .container {
+      width: 90%;
+      height: 420px;
+    }
+    #copy{
+        margin-top: 40px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    h1{
+        width: auto;
+        margin: auto;
+    }
+    .container {
+      width: 100%;
+      margin: 20px auto;
+      padding: 10px;
+      height: 440px;
+    }
+    #copy{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+}
